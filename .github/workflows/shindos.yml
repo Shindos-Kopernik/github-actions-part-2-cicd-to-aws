@@ -20,6 +20,4 @@ jobs:
         
       - name: Create ZIp deployment package 
         run : zip -r ${{ env.DEPLOY_PACKEGE_NAME }} ./ -x *.git*
-        uses: op
-  
-  
+        
