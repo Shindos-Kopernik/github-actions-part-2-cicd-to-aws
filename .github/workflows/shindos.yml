@@ -45,7 +45,7 @@ jobs:
         aws-secret-access-key: ${{ secrets.MY_AWS_SECRET_KEY }} 
         aws-region           : ${{ env.AWS_REGION_NAME }}
     - name: Create new ElasticBeanstalk Application
-      run : |
+      run : 
         aws elasticbeanstalk create-application-version \
         --aplication-name ${{ en.EB_APPLICATION_NAME }} \
         --source-bundle S3Bucket=${{ env.EB_PACKAGE_S3_BUCKET_NAME }}",S3Key="${{ env.DEPLOY_PACKEGE_NAME }}" \
